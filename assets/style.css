@@ -1249,6 +1249,9 @@ table {
         flex-wrap: wrap;
         row-gap: 5px;
     }
+    .table-content table{
+        min-width: 600px;
+    }
 
     .panel-container {
         padding: 15px 10px;
