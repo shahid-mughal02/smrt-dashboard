@@ -779,7 +779,8 @@ table {
     border-radius: 15px;
 }
 
-.buttons-list .active a,.buttons-list li:hover a {
+.buttons-list .active a,
+.buttons-list li:hover a {
     background-color: var(--secondary-color);
     color: var(--white-color);
     border-color: var(--secondary-color);
@@ -926,6 +927,10 @@ table {
     display: block;
     font-size: 40px;
     font-weight: 400;
+}
+
+.table-content {
+    overflow-x: auto;
 }
 
 .table-content th,
@@ -1244,19 +1249,22 @@ table {
         flex-wrap: wrap;
         row-gap: 5px;
     }
-    .panel-container{
+
+    .panel-container {
         padding: 15px 10px;
         margin-top: 15px;
     }
+
     #site-footer {
         padding-top: 30px;
     }
 }
 
 @media screen and (max-width:575px) {
-    .panel-info{
+    .panel-info {
         width: 55%;
     }
+
     .info-circle:not(.info-circle:last-child) {
         display: none;
     }
