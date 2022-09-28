@@ -1249,6 +1249,9 @@ table {
 }
 
 @media screen and (max-width:575px) {
+    .panel-info{
+        width: 55%;
+    }
     .info-circle:not(.info-circle:last-child) {
         display: none;
     }
