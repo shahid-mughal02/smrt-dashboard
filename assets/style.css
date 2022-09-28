@@ -275,6 +275,8 @@ table {
 #sidebar {
     display: flex;
     transition: width .3s;
+    position: relative;
+    z-index: 9;
 }
 
 .collapse-sidebar .toggle-sidebar {
