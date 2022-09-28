@@ -779,7 +779,7 @@ table {
     border-radius: 15px;
 }
 
-.buttons-list .active a {
+.buttons-list .active a,.buttons-list li:hover a {
     background-color: var(--secondary-color);
     color: var(--white-color);
     border-color: var(--secondary-color);
