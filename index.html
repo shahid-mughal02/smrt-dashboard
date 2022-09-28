@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Smrt Recognition</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+
+<body>
+    <header id="panel-header">
+        <div class="header-content">
+            <div class="site-logo">
+                <a href="./index.html">
+                    <img src="./assets/logo.png" alt="Smrt Recognition">
+                </a>
+            </div>
+            <div class="toggle-box">
+                <button class="toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+            <div class="panel-search">
+                <form action="">
+                    <input type="search" placeholder="Search...">
+                    <button>
+                        <img src="./assets//search.png" alt="search">
+                    </button>
+                </form>
+            </div>
+            <div class="panel-info">
+                <div class="cirlce-box">
+                    <div class="info-circle">
+                        <a href="#"><img src="./assets/setting-icon.png" alt="settings"></a>
+                    </div>
+                    <div class="info-circle">
+                        <a href="#">7</a>
+                    </div>
+                    <div class="info-circle">
+                        <img src="./assets/user.png" alt="user profile">
+                    </div>
+                </div>
+                <div class="info-box">
+                    <button class="user-info">
+                        <h4>T. JOBLONSKI </h4> 
+                        <i class="fa fa-light fa-angle-down"></i>
+                    </button>
+                    <div class="panel-timer">
+                        <h4>11:21 PM</h4>
+                    </div>
+                    <div class="right-menu">
+                        <button class="toggle-right-menu">
+                            <img src="./assets/right-menu.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="panel-wrapper">
+        <aside id="sidebar" class="collapse-sidebar show-menu-text">
+            <div class="fixed-menu">
+                <div class="user-profile">
+                    <div class="avatar">
+                        <div class="menu-icon">
+                            <img src="./assets/user.png" alt="profile">
+                        </div>
+                        <span class="status-badge"></span>
+                    </div>
+                    <div class="detail">
+                        <h3>T.JOBLONSKI</h3>
+                        <span>ADMINISTRATOR</span>
+                    </div>
+                </div>
+                <div class="side-menu">
+                    <ul class="menu">
+                        <li>
+                            <a href="#" class="active">
+                                <div class="menu-icon">
+                                    <img src="./assets/monitor-icon.png" alt="DASHBOARD">
+                                </div>
+                                <div class="menu-text">
+                                    <span>DASHBOARD</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="menu-icon">
+                                    <img src="./assets/message.png" alt="MESSAGE">
+                                </div>
+                                <div class="menu-text">
+                                    <span>MESSAGE</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="menu-icon">
+                                    <img src="./assets/buyer.png" alt="BUYER PERSONA">
+                                </div>
+                                <div class="menu-text">
+                                    <span>BUYER PERSONA</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="has-dropdown">
+                            <a href="#">
+                                <div class="menu-icon">
+                                    <img src="./assets/settings-icon-2.png" alt="SETTINGS">
+                                </div>
+                                <div class="menu-text">
+                                    <span>SETTINGS</span>
+                                </div>
+                            </a>
+                            <div class="sub-menu">
+                                <ul>
+                                    <li><a href="#">MY PROFILE</a></li>
+                                    <li><a href="#">MY PANEL</a></li>
+                                    <li><a href="#">SECURITY</a></li>
+                                    <li><a href="#">LOGOUT</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="toggle-sidebar">
+                <div class="calendar">
+                    <img src="./assets/calendar.png" alt="calendar">
+                    <span class="year">2019</span>
+                    <span class="date">12 DEC</span>
+                    <span>ALBERTA, CA</span>
+                </div>
+                <button class="collapse-btn">
+                    HIDE
+                </button>
+            </div>
+        </aside>
+        <main id="panel-content">
+            <div class="progress-grid">
+                <div class="progress-item">
+                    <div class="progress-icon">
+                        <img src="./assets/people.png" alt="Visitors">
+                    </div>
+                    <div class="progress-info">
+                        <h3 class="count">38</h3>
+                        <span>TOTAL VISITORS</span>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-icon">
+                        <img src="./assets/man.png" alt="male vs female">
+                    </div>
+                    <div class="progress-info">
+                        <h3 class="count">59/125</h3>
+                        <span>MALE VS. FEMALE</span>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-icon">
+                        <img src="./assets/avg.png" alt="avg age">
+                    </div>
+                    <div class="progress-info">
+                        <h3 class="count">87</h3>
+                        <span>AVG. AGE</span>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-icon">
+                        <img src="./assets/clock.png" alt="avg time">
+                    </div>
+                    <div class="progress-info">
+                        <h3 class="count">43</h3>
+                        <span>AVG. TIME</span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-container has-2-column">
+                <div class="panel-content">
+                    <div class="panel-left-content">
+                        <div class="panel-header">
+                            <h4>ANALYSIS <span class="count-badge">3</span></h4>
+                            <button class="more-option">
+                                <span>Last Week</span>
+                                <div class="dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="analysis-grid">
+                            <div class="analysis-item less-50 p45">
+                                <div class="analysis-icon">
+                                    <div class="icon-bg"></div>
+                                    <img src="./assets/smile.png" alt="smile emoji">
+                                </div>
+                                <div class="analysis-info">
+                                    <h5>45 %</h5>
+                                </div>
+                            </div>
+                            <div class="analysis-item less-50 p35">
+                                <div class="analysis-icon">
+                                    <div class="icon-bg"></div>
+                                    <img src="./assets/neutral.png" alt="neutral emoji">
+                                </div>
+                                <div class="analysis-info">
+                                    <h5>35 %</h5>
+                                </div>
+                            </div>
+                            <div class="analysis-item less-50 p20">
+                                <div class="analysis-icon">
+                                    <div class="icon-bg"></div>
+                                    <img src="./assets/sad.png" alt="sad emoji">
+                                </div>
+                                <div class="analysis-info">
+                                    <h5>20 %</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-divider"></div>
+                    <div class="panel-right-content">
+                        <div class="panel-header">
+                            <h4>STATISTICS <span class="count-badge">3</span></h4>
+                            <button class="more-option">
+                                <span>Last Year</span>
+                                <div class="dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="statistics-chart">
+                            <div id="chart-fill-lines">
+                                <!-- chart with fill line -->
+                            </div>
+                            <div class="buttons-list">
+                                <ul>
+                                    <li><a href="#">amount of visitors</a></li>
+                                    <li><a href="#">male vs. female</a></li>
+                                    <li class="active"><a href="#">avg. age</a></li>
+                                    <li><a href="#">avg. time</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-container has-3-column">
+                <div class="panel-content">
+                    <div class="panel-left-content">
+                        <div class="panel-header">
+                            <h4>male vs female</h4>
+                            <button class="circle-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="characters-box">
+                            <div class="character">
+                                <div class="character-img">
+                                    <img src="./assets/woman.png" alt="">
+                                </div>
+                                <div class="character-info">
+                                    <h5>40 %</h5>
+                                </div>
+                            </div>
+                            <div class="character">
+                                <div class="character-img">
+                                    <img src="./assets/man-1.png" alt="">
+                                </div>
+                                <div class="character-info">
+                                    <h5>55 %</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-divider"></div>
+                    <div class="panel-middle-content">
+                        <div class="panel-header">
+                            <h4>avg. dwell time</h4>
+                            <button class="circle-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="timer-box">
+                            <div class="timer-border">
+                                <img src="./assets/time-circle.png" alt="timer">
+                                <p><span>3:05</span> minutes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-divider"></div>
+                    <div class="panel-right-content">
+                        <div class="panel-header">
+                            <h4>age groups <button class="badge-btn"><span class="count-badge">3</span> See
+                                    More</button></h4>
+                            <button class="circle-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="table-content">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Crowd Size</th>
+                                        <th>Video 1</th>
+                                        <th>Video 2</th>
+                                        <th>TOTAL</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>0:00 - 14:59</td>
+                                        <td>21</td>
+                                        <td>2</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>0:00 - 14:59</td>
+                                        <td>21</td>
+                                        <td>2</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>0:00 - 14:59</td>
+                                        <td>21</td>
+                                        <td>2</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>0:00 - 14:59</td>
+                                        <td>21</td>
+                                        <td>2</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>0:00 - 14:59</td>
+                                        <td>21</td>
+                                        <td>2</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>0:00 - 14:59</td>
+                                        <td>21</td>
+                                        <td>2</td>
+                                        <td>23</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>90:00 - 104:59</td>
+                                        <td>n/a</td>
+                                        <td>4</td>
+                                        <td>4</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-container has-2-column styled-table">
+                <div class="panel-content">
+                    <div class="panel-left-content">
+                        <div class="panel-header">
+                            <h4>ANALYSIS <span class="count-badge">3</span></h4>
+                            <button class="more-option">
+                                <span>Last Month</span>
+                                <div class="dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="table-content">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Video 1</th>
+                                        <th>0:00 - 14:59</th>
+                                        <th>15:00 - 29:59</th>
+                                        <th>30:00 - 44:59</th>
+                                        <th>45:00 - 59:59</th>
+                                        <th>60:00 -</th>
+                                        <th>74:59</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Caucasian %</th>
+                                        <td>21</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>23</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Black %</th>
+                                        <td>21</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>23</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Hispanic %</th>
+                                        <td>21</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>23</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Asian %</th>
+                                        <td>21</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>23</td>
+                                        <td>23</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="vertical-divider"></div>
+                    <div class="panel-right-content">
+                        <div class="panel-header">
+                            <h4>REPEATED VISITORS <span class="count-badge">5</span></h4>
+                            <button class="circle-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <div class="statistics-chart">
+                            <div id="chart-lines">
+                                <!-- chart with fill line -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="site-footer">
+                <div class="footer-logo">
+                    <img src="./assets//aqomi-logo.png" alt="aqomi">
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="./assets/index.js"></script>
+</body>
+
+</html>
