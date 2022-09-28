@@ -976,16 +976,19 @@ table {
     width: 40%;
 }
 
-#chart-fill-lines{
+#chart-fill-lines {
     width: calc(100% - 125px);
 }
-#chart-lines{
+
+#chart-lines {
     width: 100%;
 }
-.apexcharts-legend-series .apexcharts-legend .apexcharts-legend-marker{
+
+.apexcharts-legend-series .apexcharts-legend .apexcharts-legend-marker {
     background-color: var(--primary-color) !important;
     color: var(--primary-color) !important;
 }
+
 #site-footer {
     padding-top: 75px;
     padding-bottom: 50px;
@@ -1003,7 +1006,8 @@ table {
     .panel-search {
         margin-left: 20px;
     }
-    .statistics-chart{
+
+    .statistics-chart {
         column-gap: 20px;
     }
 }
@@ -1255,6 +1259,30 @@ table {
 
     .progress-icon img {
         width: 40px;
+    }
+
+    .statistics-chart {
+        flex-wrap: wrap;
+    }
+
+    .statistics-chart .buttons-list {
+        width: 100%;
+    }
+
+    #chart-fill-lines {
+        width: 100%;
+    }
+
+    .buttons-list ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .buttons-list li+li {
+        margin-top: 0;
     }
 
     #site-footer {
