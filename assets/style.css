@@ -1242,7 +1242,10 @@ table {
         flex-wrap: wrap;
         row-gap: 5px;
     }
-
+    .panel-container{
+        padding: 15px 10px;
+        margin-top: 15px;
+    }
     #site-footer {
         padding-top: 30px;
     }
